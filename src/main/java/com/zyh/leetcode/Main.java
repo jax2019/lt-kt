@@ -4,6 +4,7 @@ package com.zyh.leetcode;
 import com.zyh.leetcode.sort2.base.BaseSort2;
 import com.zyh.leetcode.sort2.base.SortBean;
 import com.zyh.leetcode.sort2.level2.MergeSort;
+import com.zyh.leetcode.sort2.level3.CountingSort;
 
 public class Main {
 
@@ -40,7 +41,7 @@ public class Main {
             new SortBean(20)};
 
     public static void main(String[] args) {
-        BaseSort2 sort = new MergeSort(arrayBean);
+        BaseSort2 sort = new CountingSort(arrayBean);
         sort.printArray();
         sort.doSort();
         sort.printArray();
